@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{e8268bc1-fe46-46b1-afa3-7fe83a2eed43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="process_snapshot">
+      <UniqueIdentifier>{328427e4-d316-46ae-bf7b-16d6ac8be291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wait_chain">
+      <UniqueIdentifier>{ea855579-fae8-4301-aa7a-193dbbf21ed7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app\dlg_process.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\dlg_process_list.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="wait_chain\dlg_process_wait_chain.cpp">
+      <Filter>wait_chain</Filter>
+    </ClCompile>
+    <ClCompile Include="wait_chain\wait_chain.cpp">
+      <Filter>wait_chain</Filter>
+    </ClCompile>
+    <ClCompile Include="wait_chain\wait_chain_api.cpp">
+      <Filter>wait_chain</Filter>
+    </ClCompile>
+    <ClCompile Include="wait_chain\wait_chain_factory.cpp">
+      <Filter>wait_chain</Filter>
+    </ClCompile>
+    <ClCompile Include="wait_chain\wait_chain_node_parser.cpp">
+      <Filter>wait_chain</Filter>
+    </ClCompile>
+    <ClCompile Include="module_process.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\dlg_process.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\dlg_process_list.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="wait_chain\dlg_process_wait_chain.h">
+      <Filter>wait_chain</Filter>
+    </ClInclude>
+    <ClInclude Include="wait_chain\wait_chain.h">
+      <Filter>wait_chain</Filter>
+    </ClInclude>
+    <ClInclude Include="wait_chain\wait_chain_api.h">
+      <Filter>wait_chain</Filter>
+    </ClInclude>
+    <ClInclude Include="wait_chain\wait_chain_factory.h">
+      <Filter>wait_chain</Filter>
+    </ClInclude>
+    <ClInclude Include="wait_chain\wait_chain_node_parser.h">
+      <Filter>wait_chain</Filter>
+    </ClInclude>
+    <ClInclude Include="module_process.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+</Project>

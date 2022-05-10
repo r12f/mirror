@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{4f8148d7-5e55-42a1-b9f1-f9c75303f337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\properties">
+      <UniqueIdentifier>{7f39e25c-930a-4b7c-b1ac-5f7ff8d03b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{b31c0eb9-599d-43d1-97e5-472f68d49212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\input">
+      <UniqueIdentifier>{a39541ce-8c92-4e3a-9739-b6e85948b711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\snapshot">
+      <UniqueIdentifier>{224c700d-066c-4b52-8871-527de24abbdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="highlight">
+      <UniqueIdentifier>{ba022062-8ee4-47db-ae91-ea17cd2c83c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app\dlg_window.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\dlg_window_filters.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\dlg_window_list.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\window_app_utils.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\window_tree_ctrl.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\add_style_menu.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_basic_info.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_class.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_dwm.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_dwm_op.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_dwm_timing.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_get_rect.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_get_window.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_input.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_input_batch.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_input_key_mouse.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_modify_prop.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_op.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_prop.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_properties.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dlg_window_set_layered_window.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="app\properties\dwm_op_menu.cpp">
+      <Filter>app\properties</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\dwmapi_adapter.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\style_translator.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\window_inject_code.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\window_output.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\window_utils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\input\input_simulator.cpp">
+      <Filter>utils\input</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\input\input_simulator_base.cpp">
+      <Filter>utils\input</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\input\real_input_simulator.cpp">
+      <Filter>utils\input</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\input\window_input_simulator.cpp">
+      <Filter>utils\input</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_base.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_class_name.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_const.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_factory.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_factory_base.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_number.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_pid.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_process_name.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_string.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_tid.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_filter_title.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_snapshot.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\snapshot\window_snapshot_impl.cpp">
+      <Filter>utils\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="highlight\dlg_window_tracker.cpp">
+      <Filter>highlight</Filter>
+    </ClCompile>
+    <ClCompile Include="highlight\highlight_service.cpp">
+      <Filter>highlight</Filter>
+    </ClCompile>
+    <ClCompile Include="module_window.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\dlg_window.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\dlg_window_filters.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\dlg_window_list.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\window_app_utils.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\window_tree_ctrl.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\add_style_menu.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_basic_info.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_class.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_dwm.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_dwm_op.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_dwm_timing.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_get_rect.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_get_window.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_input.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_input_batch.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_input_key_mouse.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_modify_prop.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_op.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_prop.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_properties.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dlg_window_set_layered_window.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="app\properties\dwm_op_menu.h">
+      <Filter>app\properties</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\dwmapi_adapter.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\scoped_thread_attach.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\style_translator.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\window_inject_code.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\window_output.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\window_utils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\input\input_simulator.h">
+      <Filter>utils\input</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\input\input_simulator_base.h">
+      <Filter>utils\input</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\input\real_input_simulator.h">
+      <Filter>utils\input</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\input\window_input_simulator.h">
+      <Filter>utils\input</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_base.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_class_name.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_const.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_factory.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_factory_base.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_number.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_pid.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_process_name.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_string.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_tid.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_filter_title.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_snapshot.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\snapshot\window_snapshot_impl.h">
+      <Filter>utils\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="highlight\dlg_window_tracker.h">
+      <Filter>highlight</Filter>
+    </ClInclude>
+    <ClInclude Include="highlight\highlight_service.h">
+      <Filter>highlight</Filter>
+    </ClInclude>
+    <ClInclude Include="module_window.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+</Project>

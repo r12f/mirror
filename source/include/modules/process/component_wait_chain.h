@@ -1,0 +1,21 @@
+#pragma once
+
+#include <Wct.h>
+
+// {DFE8195E-8C4B-4380-974F-46A4FA458399}
+MIDL_INTERFACE("DD652DC6-E0D9-4669-B48F-A7AA879C4457")
+IWaitChainListener : IUnknown
+{
+public:
+    virtual HRESULT STDMETHODCALLTYPE OnWait(WAITCHAIN_NODE_INFO *pNode) = 0;
+    virtual HRESULT STDMETHODCALLTYPE OnDeadLock(BOOL bLock) = 0;
+};
+
+// {DD652DC6-E0D9-4669-B48F-A7AA879C4457}
+MIDL_INTERFACE("DD652DC6-E0D9-4669-B48F-A7AA879C4457")
+IWaitChain : IUnknown
+{
+public:
+    virtual HRESULT STDMETHODCALLTYPE SetNeedUI(BOOL bNeed) = 0;
+    virtual HRESULT STDMETHODCALLTYPE AnalyzeThread(DWORD nTid, IWaitChainListener *pListener) = 0;
+};

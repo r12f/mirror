@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="com">
+      <UniqueIdentifier>{c50e5707-1270-4b42-bcb9-ea7fbf300a63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system">
+      <UniqueIdentifier>{f5237401-51d9-4b15-bac1-de36a83e8bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{f72f44dc-0f1d-4df9-ad5b-3784ea514329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kv">
+      <UniqueIdentifier>{29427c26-73a7-4d8c-87f1-c74056d9d4a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="threading">
+      <UniqueIdentifier>{58ced4b7-e9fa-4f88-bf94-bd27a74729de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{d0cbabb2-cfe1-43c3-b621-aae773a34128}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="com\com_class.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="com\simple_com_class.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="system\etw_consumer.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\process_control.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\system_snapshot_walker.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\thread_control.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\wininteral_adapter.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="system\wow_adapter.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="log\log.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="log\logger.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="assert_return.h" />
+    <ClInclude Include="ref_count.h" />
+    <ClInclude Include="scoped_handle.h" />
+    <ClInclude Include="scoped_internet_handle.h" />
+    <ClInclude Include="string_number_convertions.h" />
+    <ClInclude Include="kv\kv.h">
+      <Filter>kv</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="threading\lock.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="kv\kv_array.h">
+      <Filter>kv</Filter>
+    </ClInclude>
+    <ClInclude Include="kv\kv_map.h">
+      <Filter>kv</Filter>
+    </ClInclude>
+    <ClInclude Include="kv\kv_value.h">
+      <Filter>kv</Filter>
+    </ClInclude>
+    <ClInclude Include="io\file.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\directory.h">
+      <Filter>io</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="system\etw_consumer.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\process_control.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\system_snapshot_walker.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\thread_control.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\wininteral_adapter.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="system\wow_adapter.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="log\logger.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="string_number_convertions.cpp" />
+    <ClCompile Include="kv\kv.cpp">
+      <Filter>kv</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="threading\lock.cpp">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="kv\kv_array.cpp">
+      <Filter>kv</Filter>
+    </ClCompile>
+    <ClCompile Include="kv\kv_map.cpp">
+      <Filter>kv</Filter>
+    </ClCompile>
+    <ClCompile Include="kv\kv_value.cpp">
+      <Filter>kv</Filter>
+    </ClCompile>
+    <ClCompile Include="io\directory.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\file.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

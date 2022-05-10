@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="controls\menu_button.cpp">
+      <Filter>controls</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\tab_panel.cpp">
+      <Filter>controls</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\tree_ctrl_ex.cpp">
+      <Filter>controls</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\ui_control.cpp">
+      <Filter>controls</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\editable_list_ctrl.cpp">
+      <Filter>controls</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\filter_combo_box_ex.cpp">
+      <Filter>controls</Filter>
+    </ClCompile>
+    <ClCompile Include="controls\float_edit.cpp">
+      <Filter>controls</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_factory.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_hcontainer.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_loader.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_native_window.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_native_window_base.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_native_window_enhancer.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_root_creator.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_vcontainer.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_box_base.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_box_root.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="layout\layout_container.cpp">
+      <Filter>layout</Filter>
+    </ClCompile>
+    <ClCompile Include="base\keycode.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\comm_ctrl_utils.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="datatable\table_column.cpp">
+      <Filter>datatable</Filter>
+    </ClCompile>
+    <ClCompile Include="datatable\table_filler.cpp">
+      <Filter>datatable</Filter>
+    </ClCompile>
+    <ClCompile Include="datatable\table_data_traits.cpp">
+      <Filter>datatable</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\simple_droptarget.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="controls\menu_button.h">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="controls\tab_panel.h">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="controls\tree_ctrl_ex.h">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="controls\ui_control.h">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="controls\editable_list_ctrl.h">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="controls\filter_combo_box_ex.h">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="controls\float_edit.h">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_box_base.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_box_root.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_container.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_hcontainer.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_internal_interfaces.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_loader.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_native_window.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_native_window_base.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_native_window_enhancer.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_root_creator.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="layout\layout_vcontainer.h">
+      <Filter>layout</Filter>
+    </ClInclude>
+    <ClInclude Include="base\keycode.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="controls\tree_list_ctrl.h">
+      <Filter>controls</Filter>
+    </ClInclude>
+    <ClInclude Include="base\comm_ctrl_utils.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="datatable\table_column.h">
+      <Filter>datatable</Filter>
+    </ClInclude>
+    <ClInclude Include="datatable\table_cell.h">
+      <Filter>datatable</Filter>
+    </ClInclude>
+    <ClInclude Include="datatable\table_filler.h">
+      <Filter>datatable</Filter>
+    </ClInclude>
+    <ClInclude Include="datatable\table_data_traits.h">
+      <Filter>datatable</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\simple_droptarget.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="controls">
+      <UniqueIdentifier>{e7963e7b-0149-4a49-a2fe-26ad6341e97c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="layout">
+      <UniqueIdentifier>{a61fe088-a265-48a9-a71b-1dea07ed4711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{7fac83b6-69bf-44dd-a5bc-e086554a5f23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="datatable">
+      <UniqueIdentifier>{f36bff6d-8ba3-45b9-9948-a834fe5a7fcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{7fcdbac8-998a-4176-8288-b539351f6f09}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F3A61213-DBCD-4E56-A126-76CA6361A6A0}</ProjectGuid>
+    <RootNamespace>wtl</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.20617.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\output\$(Configuration)\$(PlatformTarget)\lib\</OutDir>
+    <IntDir>$(SolutionDir)..\output\$(Configuration)\$(PlatformTarget)\obj\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\output\$(Configuration)\$(PlatformTarget)\lib\</OutDir>
+    <IntDir>$(SolutionDir)..\output\$(Configuration)\$(PlatformTarget)\obj\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\output\$(Configuration)\$(PlatformTarget)\lib\</OutDir>
+    <IntDir>$(SolutionDir)..\output\$(Configuration)\$(PlatformTarget)\obj\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\output\$(Configuration)\$(PlatformTarget)\lib\</OutDir>
+    <IntDir>$(SolutionDir)..\output\$(Configuration)\$(PlatformTarget)\obj\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)third_party\wtl;$(SolutionDir)include;$(SolutionDir);$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)third_party\wtl;$(SolutionDir)include;$(SolutionDir);$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)third_party\wtl;$(SolutionDir)include;$(SolutionDir);$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)third_party\wtl;$(SolutionDir)include;$(SolutionDir);$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="app\dlg_window.cpp" />
+    <ClCompile Include="app\dlg_window_filters.cpp" />
+    <ClCompile Include="app\dlg_window_list.cpp" />
+    <ClCompile Include="app\window_app_utils.cpp" />
+    <ClCompile Include="app\window_tree_ctrl.cpp" />
+    <ClCompile Include="app\properties\add_style_menu.cpp" />
+    <ClCompile Include="app\properties\dlg_window_basic_info.cpp" />
+    <ClCompile Include="app\properties\dlg_window_class.cpp" />
+    <ClCompile Include="app\properties\dlg_window_dwm.cpp" />
+    <ClCompile Include="app\properties\dlg_window_dwm_op.cpp" />
+    <ClCompile Include="app\properties\dlg_window_dwm_timing.cpp" />
+    <ClCompile Include="app\properties\dlg_window_get_rect.cpp" />
+    <ClCompile Include="app\properties\dlg_window_get_window.cpp" />
+    <ClCompile Include="app\properties\dlg_window_input.cpp" />
+    <ClCompile Include="app\properties\dlg_window_input_batch.cpp" />
+    <ClCompile Include="app\properties\dlg_window_input_key_mouse.cpp" />
+    <ClCompile Include="app\properties\dlg_window_modify_prop.cpp" />
+    <ClCompile Include="app\properties\dlg_window_op.cpp" />
+    <ClCompile Include="app\properties\dlg_window_prop.cpp" />
+    <ClCompile Include="app\properties\dlg_window_properties.cpp" />
+    <ClCompile Include="app\properties\dlg_window_set_layered_window.cpp" />
+    <ClCompile Include="app\properties\dwm_op_menu.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="utils\dwmapi_adapter.cpp" />
+    <ClCompile Include="utils\style_translator.cpp" />
+    <ClCompile Include="utils\window_inject_code.cpp">
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Default</BasicRuntimeChecks>
+      <BufferSecurityCheck Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</BufferSecurityCheck>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Default</BasicRuntimeChecks>
+      <BufferSecurityCheck Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</BufferSecurityCheck>
+      <BufferSecurityCheck Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</BufferSecurityCheck>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Default</BasicRuntimeChecks>
+      <BufferSecurityCheck Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</BufferSecurityCheck>
+    </ClCompile>
+    <ClCompile Include="utils\window_output.cpp" />
+    <ClCompile Include="utils\window_utils.cpp" />
+    <ClCompile Include="utils\input\input_simulator.cpp" />
+    <ClCompile Include="utils\input\input_simulator_base.cpp" />
+    <ClCompile Include="utils\input\real_input_simulator.cpp" />
+    <ClCompile Include="utils\input\window_input_simulator.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_base.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_class_name.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_const.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_factory.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_factory_base.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_number.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_pid.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_process_name.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_string.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_tid.cpp" />
+    <ClCompile Include="utils\snapshot\window_filter_title.cpp" />
+    <ClCompile Include="utils\snapshot\window_snapshot.cpp" />
+    <ClCompile Include="utils\snapshot\window_snapshot_impl.cpp" />
+    <ClCompile Include="highlight\dlg_window_tracker.cpp" />
+    <ClCompile Include="highlight\highlight_service.cpp" />
+    <ClCompile Include="module_window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\dlg_window.h" />
+    <ClInclude Include="app\dlg_window_filters.h" />
+    <ClInclude Include="app\dlg_window_list.h" />
+    <ClInclude Include="app\window_app_utils.h" />
+    <ClInclude Include="app\window_tree_ctrl.h" />
+    <ClInclude Include="app\properties\add_style_menu.h" />
+    <ClInclude Include="app\properties\dlg_window_basic_info.h" />
+    <ClInclude Include="app\properties\dlg_window_class.h" />
+    <ClInclude Include="app\properties\dlg_window_dwm.h" />
+    <ClInclude Include="app\properties\dlg_window_dwm_op.h" />
+    <ClInclude Include="app\properties\dlg_window_dwm_timing.h" />
+    <ClInclude Include="app\properties\dlg_window_get_rect.h" />
+    <ClInclude Include="app\properties\dlg_window_get_window.h" />
+    <ClInclude Include="app\properties\dlg_window_input.h" />
+    <ClInclude Include="app\properties\dlg_window_input_batch.h" />
+    <ClInclude Include="app\properties\dlg_window_input_key_mouse.h" />
+    <ClInclude Include="app\properties\dlg_window_modify_prop.h" />
+    <ClInclude Include="app\properties\dlg_window_op.h" />
+    <ClInclude Include="app\properties\dlg_window_prop.h" />
+    <ClInclude Include="app\properties\dlg_window_properties.h" />
+    <ClInclude Include="app\properties\dlg_window_set_layered_window.h" />
+    <ClInclude Include="app\properties\dwm_op_menu.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="utils\dwmapi_adapter.h" />
+    <ClInclude Include="utils\scoped_thread_attach.h" />
+    <ClInclude Include="utils\style_translator.h" />
+    <ClInclude Include="utils\window_inject_code.h" />
+    <ClInclude Include="utils\window_output.h" />
+    <ClInclude Include="utils\window_utils.h" />
+    <ClInclude Include="utils\input\input_simulator.h" />
+    <ClInclude Include="utils\input\input_simulator_base.h" />
+    <ClInclude Include="utils\input\real_input_simulator.h" />
+    <ClInclude Include="utils\input\window_input_simulator.h" />
+    <ClInclude Include="utils\snapshot\window_filter.h" />
+    <ClInclude Include="utils\snapshot\window_filter_base.h" />
+    <ClInclude Include="utils\snapshot\window_filter_class_name.h" />
+    <ClInclude Include="utils\snapshot\window_filter_const.h" />
+    <ClInclude Include="utils\snapshot\window_filter_factory.h" />
+    <ClInclude Include="utils\snapshot\window_filter_factory_base.h" />
+    <ClInclude Include="utils\snapshot\window_filter_number.h" />
+    <ClInclude Include="utils\snapshot\window_filter_pid.h" />
+    <ClInclude Include="utils\snapshot\window_filter_process_name.h" />
+    <ClInclude Include="utils\snapshot\window_filter_string.h" />
+    <ClInclude Include="utils\snapshot\window_filter_tid.h" />
+    <ClInclude Include="utils\snapshot\window_filter_title.h" />
+    <ClInclude Include="utils\snapshot\window_snapshot.h" />
+    <ClInclude Include="utils\snapshot\window_snapshot_impl.h" />
+    <ClInclude Include="highlight\dlg_window_tracker.h" />
+    <ClInclude Include="highlight\highlight_service.h" />
+    <ClInclude Include="module_window.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

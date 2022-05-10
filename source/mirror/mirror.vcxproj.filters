@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{98747bf0-cabb-4bea-aa36-649d75dabcaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{af5b4d75-113b-40fc-904b-cba4a20b47fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app\dlg_about.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\dlg_main.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\dlg_user_agreement.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="mirror.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\dlg_about.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\dlg_main.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\dlg_user_agreement.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\hidewin.bmp">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="resource\mirror.ico">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="resource\showwin.bmp">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\mirror.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\picker.cur">
+      <Filter>resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="resource\resource_map.xml">
+      <Filter>resource</Filter>
+    </Xml>
+    <Xml Include="resource\ui.xml">
+      <Filter>resource</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="resource\resource.h">
+      <Filter>resource</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

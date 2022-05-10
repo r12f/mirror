@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="modules">
+      <UniqueIdentifier>{563eba92-557d-4cec-9df0-b6490a03b5a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\builtin">
+      <UniqueIdentifier>{51996bda-ce8b-4a71-a62d-b46c4aba3506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\window">
+      <UniqueIdentifier>{8ccfdf8f-9a36-4e84-9675-650e1b480c8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\process">
+      <UniqueIdentifier>{832e4dc0-d410-401a-8530-dc53ef5626ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modules\compile">
+      <UniqueIdentifier>{d1bfd827-b596-4cd2-86f3-a7885f1789e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{c7920821-91e0-4364-8b4b-0b6657779107}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="modules\builtin\component_code_injector.h">
+      <Filter>modules\builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\builtin\component_config.h">
+      <Filter>modules\builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\builtin\component_config_id.h">
+      <Filter>modules\builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\builtin\component_downloader.h">
+      <Filter>modules\builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\builtin\component_hotkey.h">
+      <Filter>modules\builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\builtin\component_hotkey_id.h">
+      <Filter>modules\builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\builtin\component_http_downloader.h">
+      <Filter>modules\builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\builtin\component_log.h">
+      <Filter>modules\builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\builtin\component_thread_pool.h">
+      <Filter>modules\builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\builtin\component_update_service.h">
+      <Filter>modules\builtin</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\window\component_highlight_service.h">
+      <Filter>modules\window</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\window\component_window.h">
+      <Filter>modules\window</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\process\component_process_tree.h">
+      <Filter>modules\process</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\process\component_wait_chain.h">
+      <Filter>modules\process</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\compile\pdb_utils.h">
+      <Filter>modules\compile</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\compile\pe.h">
+      <Filter>modules\compile</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\layout.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\component_id.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\mir_module.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\module_id.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\ui_interface.h">
+      <Filter>modules</Filter>
+    </ClInclude>
+    <ClInclude Include="mirror_license.h" />
+    <ClInclude Include="mirror_version.h" />
+    <ClInclude Include="common_stdafx.h" />
+    <ClInclude Include="ui_stdafx.h" />
+  </ItemGroup>
+</Project>

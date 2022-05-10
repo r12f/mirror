@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="tinyxml">
+</Property><Property Name="Solution File" Value="E:\asp\code\workspace\mirror\dev\source\third_party\tinyxml\tinyxml.sln">
+</Property><Property Name="Date" Value="2012年4月29日">
+</Property><Property Name="Time" Value="10:17">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="tinyxml.sln" Description="File successfully backed up as E:\asp\code\workspace\mirror\dev\source\third_party\tinyxml\tinyxml.sln.old">
+</Event><Event ErrorLevel="2" Project="E:\asp\code\workspace\mirror\dev\source\third_party\tinyxml\tinyXmlTest.vcxproj" Source="tinyXmlTest" Description="Cannot load the project due to a corrupt project file.">
+</Event><Event ErrorLevel="2" Project="tinyXmlTest" Source="tinyXmlTest.vcxproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="tinyXmlTest" Source="tinyXmlTest.vcxproj" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="E:\asp\code\workspace\mirror\dev\source\third_party\tinyxml\tinyXmlTestSTL.vcxproj" Source="tinyXmlTestSTL" Description="Cannot load the project due to a corrupt project file.">
+</Event><Event ErrorLevel="2" Project="tinyXmlTestSTL" Source="tinyXmlTestSTL.vcxproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="tinyXmlTestSTL" Source="tinyXmlTestSTL.vcxproj" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="E:\asp\code\workspace\mirror\dev\source\third_party\tinyxml\tinyxml_lib.vcxproj" Source="tinyxml_lib" Description="Cannot load the project due to a corrupt project file.">
+</Event><Event ErrorLevel="2" Project="tinyxml_lib" Source="tinyxml_lib.vcxproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="tinyxml_lib" Source="tinyxml_lib.vcxproj" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="E:\asp\code\workspace\mirror\dev\source\third_party\tinyxml\tinyxmlSTL.vcxproj" Source="tinyxmlSTL" Description="Cannot load the project due to a corrupt project file.">
+</Event><Event ErrorLevel="2" Project="tinyxmlSTL" Source="tinyxmlSTL.vcxproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="tinyxmlSTL" Source="tinyxmlSTL.vcxproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="" Source="tinyxml.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="tinyxml.sln" Description="No Conversion Required">
+</Event></UpgradeLog>

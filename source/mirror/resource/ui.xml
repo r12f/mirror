@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="GB18030" ?>
+<UI>
+    <Root Id="IDD_DIALOG_MAIN">
+        <Box Type="VContainer">
+            <Row Weight="1"><Box Type="NativeWindow" Id="IDC_MAIN_TAB" Margin="5, 5, 5, 3" /></Row>
+            <Row Size="22">
+                <Box Type="NativeWindow" Id="IDC_MAIN_STATUSBAR" X="0" Y="0" />
+                <Box Type="HContainer" X="0" Y="0">
+                    <Col Weight="1"><Box Type="Basic" /></Col>
+                    <Col Size="80"><Box Type="NativeWindow" Id="IDC_SYSLINK_REPORT" Margin="4, 4, 4, 4" /></Col>
+                    <Col Size="90"><Box Type="NativeWindow" Id="IDC_SYSLINK_DONATE" Margin="4, 4, 8, 4" /></Col>
+                </Box>
+            </Row>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW">
+        <Box Type="VContainer" Margin="5, 2, 5, 2">
+            <Row Size="50">
+                <Box Type="HContainer">
+                    <Col Size="40">
+                        <Box Type="NativeWindow" Id="IDC_STATIC_PIC_CAPTURE" Width="30" Height="30" VAlign="Center" HAlign="Center" />
+                    </Col>
+                    <Col Size="140">
+                        <Box Type="NativeWindow" Id="IDC_STATIC_WINDOW_LIST_CAPTURE_NOTICE" Height="26" VAlign="Center" HAlign="Center" />
+                    </Col>
+                    <Col Weight="1">
+                        <Box Type="VContainer">
+                            <Row Weight="1">
+                                <Box Type="HContainer" Width="348" HAlign="Right">
+                                    <Col Size="65"><Box Type="NativeWindow" Id="IDC_STATIC_WATCH_WINDOW_HANDLE" Width="62" Height="14" HAlign="Right" VAlign="Center" /></Col>
+                                    <Col Size="65"><Box Type="NativeWindow" Id="IDC_EDIT_WINDOW_WATCH_WINDOW" Width="62" Height="20" HAlign="Left" VAlign="Center" /></Col>
+                                    <Col Size="25"><Box Type="NativeWindow" Id="IDC_STATIC_WATCH_WINDOW_X" Width="20" Height="14" HAlign="Right" VAlign="Center" /></Col>
+                                    <Col Size="40"><Box Type="NativeWindow" Id="IDC_EDIT_WINDOW_WATCH_WINDOW_OFFSET_X" Width="34" Height="20" HAlign="Left" VAlign="Center" /></Col>
+                                    <Col Size="25"><Box Type="NativeWindow" Id="IDC_STATIC_WATCH_WINDOW_Y" Width="20" Height="14" HAlign="Right" VAlign="Right" /></Col>
+                                    <Col Size="40"><Box Type="NativeWindow" Id="IDC_EDIT_WINDOW_WATCH_WINDOW_OFFSET_Y" Width="34" Height="20" HAlign="Left" VAlign="Center" /></Col>
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_SET_WATCH_WINDOW" Width="62" Height="22" HAlign="Center" VAlign="Center" /></Col>
+                                    <Col Size="20"><Box Type="NativeWindow" Id="IDC_CHECK_WINDOW_TRACK_WATCH_WINDOW" Width="16" Height="22" HAlign="Center" VAlign="Center" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer" Width="448" HAlign="Right">
+                                    <Col Size="54"><Box Type="NativeWindow" Id="IDC_STATIC_WATCH_WINDOW_CLASSNAME" Width="50" Height="14" HAlign="Right" VAlign="Center" /></Col>
+                                    <Col Size="154"><Box Type="NativeWindow" Id="IDC_EDIT_WINDOW_WATCH_WINDOW_CLASS" Width="152" Height="20" HAlign="Left" VAlign="Center" /></Col>
+                                    <Col Size="68"><Box Type="NativeWindow" Id="IDC_STATIC_WATCH_WINDOW_TITLE" Width="62" Height="14" HAlign="Right" VAlign="Center" /></Col>
+                                    <Col Size="154"><Box Type="NativeWindow" Id="IDC_EDIT_WINDOW_WATCH_WINDOW_TITLE" Width="152" Height="20" HAlign="Left" VAlign="Center" /></Col>
+                                    <Col Size="20"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_SET_WINDOW_TITLE" Width="16" Height="22" HAlign="Center" VAlign="Center" /></Col>
+                                </Box>
+                            </Row>
+                        </Box>
+                    </Col>
+                </Box>
+            </Row>
+            <Row Weight="1">
+                <Box Type="NativeWindow" Id="IDC_TAB_WINDOW" />
+            </Row>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW_LIST">
+        <Box Type="NativeWindow" Id="IDC_TREE_WINDOW_LIST" Margin="5, 5, 5, 3" />
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW_PROPERTIES">
+        <Box Type="VContainer" Margin="5, 5, 5, 3">
+            <Row Size="30">
+                <Box Type="HContainer">
+                    <Col Size="80"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_PROPERTIES_REFRESH" Height="24" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Size="85"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_PROPERTIES_AUTO_REFRESH" Height="24" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Size="230"><Box Type="NativeWindow" Id="IDC_CHECK_WINDOW_TRACK_MODE" Height="20" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                </Box>
+            </Row>
+            <Row Weight="1">
+                <Box Type="NativeWindow" Id="IDC_TAB_WINDOW_PROPERTIES" Margin="0, 2, 0, 0" />
+            </Row>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW_BASIC_INFO">
+        <Box Type="HContainer" Margin="5, 5, 5, 3">
+            <Col Weight="10">
+                <Box Type="NativeWindow" Id="IDC_STATIC_WBI_GROUP_WINDOW_INFO" X="0" Y="0" Margin="0, 0, 3, 0" />
+                <Box Type="VContainer" Margin="8, 15, 11, 5">
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_WNDPROC" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_WND_PROC" Height="20" VAlign="Center" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_USER_DATA" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_USER_DATA" Height="20" VAlign="Center" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_WINDOW_RECT" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_WINDOW_RECT" Height="20" VAlign="Center" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_MOVE_WINDOW" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_CLIENT_RECT" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_CLIENT_RECT" Height="20" VAlign="Center" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_PARENT" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_PARENT" Height="20" VAlign="Center" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_SET_PARENT" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_PARENT" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_OWNER" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_OWNER" Height="20" VAlign="Center" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_OWNER" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_CHILD" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_CHILD" Height="20" VAlign="Center" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_CHILD" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_HWND_PREV" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_HWNDPREV" Height="20" VAlign="Center" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_HWNDPREV" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_HWND_NEXT" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_HWNDNEXT" Height="20" VAlign="Center" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_HWNDNEXT" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_OPACITY" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_OPACITY" Height="20" VAlign="Center" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_SET_LAYERED_WINDOW" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                        </Box>
+                    </Row>
+                </Box>
+            </Col>
+            <Col Weight="10">
+                <Box Type="VContainer">
+                    <Row Weight="1">
+                        <Box Type="NativeWindow" Id="IDC_STATIC_WBI_GROUP_WINDOW_THREAD_INFO" X="0" Y="0" Margin="3, 0, 3, 2" />
+                        <Box Type="VContainer" Margin="11, 15, 11, 7">
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_PROCESS" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_PROCESS" Height="20" VAlign="Center" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_FOCUS" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_FOCUS" Height="20" VAlign="Center" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_CHECK_WBI_TRACK_FOCUS" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_FOCUS" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_ACTIVE" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_ACTIVE" Height="20" VAlign="Center" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_CHECK_WBI_TRACK_ACTIVE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_ACTIVE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_CAPTURE" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_CAPTURE" Height="20" VAlign="Center" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_CHECK_WBI_TRACK_CAPTURE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_CAPTURE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_INPUT" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_CARET" Height="20" VAlign="Center" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_CHECK_WBI_TRACK_CARET" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_CARET" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                </Box>
+                            </Row>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="NativeWindow" Id="IDC_STATIC_WBI_GROUP_GLOBAL_INFO" X="0" Y="0" Margin="3, 2, 3, 0" />
+                        <Box Type="VContainer" Margin="11, 17, 11, 5">
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_FOREGROUND" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_FOREGROUND" Height="20" VAlign="Center" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_CHECK_WBI_TRACK_FOREGROUND" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_FOREGROUND" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_GLOBAL_FOCUS" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_GLOBAL_FOCUS" Height="20" VAlign="Center" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_CHECK_WBI_TRACK_GLOBAL_FOCUS" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_GLOBAL_FOCUS" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_GLOBAL_ACTIVE" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_GLOBAL_ACTIVE" Height="20" VAlign="Center" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_CHECK_WBI_TRACK_GLOBAL_ACTIVE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_GLOBAL_ACTIVE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_GLOBAL_CAPTURE" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_GLOBAL_CAPTURE" Height="20" VAlign="Center" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_CHECK_WBI_TRACK_GLOBAL_CAPTURE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_GLOBAL_CAPTURE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Size="70"><Box Type="NativeWindow" Id="IDC_STATIC_GLOBAL_INPUT" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_GLOBAL_CARET" Height="20" VAlign="Center" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_CHECK_WBI_TRACK_GLOBAL_CARET" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                    <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_GOTO_GLOBAL_CARET" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                                </Box>
+                            </Row>
+                        </Box>
+                    </Row>
+                </Box>
+            </Col>
+            <Col Weight="8">
+                <Box Type="NativeWindow" Id="IDC_STATIC_WBI_GROUP_WINDOW_STYLE" X="0" Y="0" Margin="3, 0, 0, 0" />
+                <Box Type="VContainer" Margin="11, 15, 8, 5">
+                    <Row Size="24">
+                        <Box Type="HContainer">
+                            <Col Size="60"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_WINDOW_STYLE" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_STYLE" Height="20" VAlign="Center" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_ADD_STYLE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_REMOVE_STYLE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="NativeWindow" Id="IDC_LIST_WBI_STYLE" />
+                    </Row>
+                    <Row Size="24">
+                        <Box Type="HContainer">
+                            <Col Size="60"><Box Type="NativeWindow" Id="IDC_STATIC_WBI_WINDOW_EXSTYLE" Height="14" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WBI_EXSTYLE" Height="20" VAlign="Center" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_ADD_EXSTYLE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                            <Col Size="17"><Box Type="NativeWindow" Id="IDC_BUTTON_WBI_REMOVE_EXSTYLE" Height="22" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="NativeWindow" Id="IDC_LIST_WBI_EXSTYLE" />
+                    </Row>
+                </Box>
+            </Col>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW_CLASS">
+        <Box Type="HContainer" Margin="5, 5, 5, 3">
+            <Col Weight="1">
+                <Box Type="NativeWindow" Id="IDC_STATIC_GROUP_CLASS_INFO" X="0" Y="0" Margin="0, 0, 3, 0" />
+                <Box Type="VContainer" Margin="8, 15, 11, 5">
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_CLASS_NAME" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_CLASS_NAME" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_CLASS_INSTANCE" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_INSTANCE" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_ICON" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_ICON" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_BG_BRUSH" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_BG_BRUSH" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_ATOM" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_ATOM" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_REGISTER_MODULE" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_REGISTER_MODULE" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_WNDPROC" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_WND_PROC" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_CURSOR" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_CURSOR" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_MENU" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_MENU" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                </Box>
+            </Col>
+            <Col Weight="1">
+                <Box Type="NativeWindow" Id="IDC_STATIC_GROUP_CLASS_STYLE" X="0" Y="0" Margin="3, 0, 3, 0" />
+                <Box Type="VContainer" Margin="11, 15, 11, 5">
+                    <Row Size="30">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_CLASS_STYLE" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_CLASS_STYLE" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="NativeWindow" Id="IDC_LIST_WCI_CLASS_STYLE" VAlign="Center" />
+                    </Row>
+                </Box>
+            </Col>
+            <Col Weight="1">
+                <Box Type="NativeWindow" Id="IDC_STATIC_GROUP_CLASS_DATA" X="0" Y="0" Margin="3, 0, 0, 0" />
+                <Box Type="VContainer" Margin="11, 15, 8, 5">
+                    <Row Size="30">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_CLASS_EXTRA_DATA" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_CLASS_EXTRA_DATA" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="NativeWindow" Id="IDC_EDIT_WCI_CLASS_EXTRA_DATA_CONTENT" VAlign="Center" />
+                    </Row>
+                    <Row Size="30">
+                        <Box Type="HContainer">
+                            <Col Size="70">
+                                <Box Type="NativeWindow" Id="IDC_STATIC_WCI_WINDOW_EXTRA_DATA" Height="14" VAlign="Center" Margin="0, 0, 5, 0" />
+                            </Col>
+                            <Col Weight="1">
+                                <Box Type="NativeWindow" Id="IDC_EDIT_WCI_WINDOW_EXTRA_DATA" Height="20" VAlign="Center" />
+                            </Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="NativeWindow" Id="IDC_EDIT_WCI_WINDOW_EXTRA_DATA_CONTENT" VAlign="Center" />
+                    </Row>
+                </Box>
+            </Col>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW_PROP">
+        <Box Type="NativeWindow" Id="IDC_LIST_WINDOW_PROP" Margin="5, 5, 5, 3" />
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW_OP">
+        <Box Type="VContainer" Margin="5, 5, 5, 3">
+            <Row Size="50">
+                <Box Type="NativeWindow" Id="IDC_STATIC_WI_SEND_MESSAGE" X="0" Y="0" Margin="0, 0, 0, 5" />
+                <Box Type="HContainer" Margin="8, 10, 8, 5">
+                    <Col Size="60"><Box Type="NativeWindow" Id="IDC_STATIC_WI_MESSAGE" Height="14" VAlign="Center" /></Col>
+                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_COMBO_WI_WINDOW_MESSAGE" Height="20" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                    <Col Size="60"><Box Type="NativeWindow" Id="IDC_STATIC_WI_WPARAM" Height="14" VAlign="Center" /></Col>
+                    <Col Size="80"><Box Type="NativeWindow" Id="IDC_EDIT_WI_WPARAM" Height="20" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                    <Col Size="60"><Box Type="NativeWindow" Id="IDC_STATIC_WI_LPARAM" Height="14" VAlign="Center" /></Col>
+                    <Col Size="80"><Box Type="NativeWindow" Id="IDC_EDIT_WI_LPARAM" Height="20" VAlign="Center" Margin="0, 0, 5, 0" /></Col>
+                    <Col Size="80"><Box Type="NativeWindow" Id="IDC_BUTTON_WI_SEND_MESSAGE" Height="24" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                    <Col Size="80"><Box Type="NativeWindow" Id="IDC_BUTTON_WI_POST_MESSAGE" Height="24" VAlign="Center" Margin="2, 0, 0, 0" /></Col>
+                </Box>
+            </Row>
+            <Row Size="60">
+                <Box Type="NativeWindow" Id="IDC_STATIC_WI_WINDOW_OP" X="0" Y="0" Margin="0, 0, 0, 5" />
+                <Box Type="HContainer" Margin="8, 10, 8, 5">
+                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WI_SHOW_WINDOW" Height="22" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WI_ENABLE_WINDOW" Height="22" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WI_ZORDER" Height="22" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WI_SYSCOMMAND" Height="22" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WI_SET_FOCUS" Height="22" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WI_SET_ACTIVE" Height="22" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WI_SET_FOREGROUND" Height="22" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                </Box>
+            </Row>
+            <Row Size="60">
+                <Box Type="NativeWindow" Id="IDC_STATIC_WI_DETECT_WAIT_CHAIN" X="0" Y="0" Margin="0, 0, 0, 5" />
+                <Box Type="HContainer" Margin="8, 10, 8, 5">
+                    <Col Size="100"><Box Type="NativeWindow" Id="IDC_BUTTON_WI_PARSE_WAIT_CHAIN" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                </Box>
+            </Row>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW_INPUT">
+        <Box Type="NativeWindow" Id="IDC_TAB_WINDOW_INPUT" Margin="5, 5, 5, 3" />
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW_INPUT_KEYMOUSE">
+        <Box Type="VContainer" Margin="5, 5, 5, 3">
+            <Row Weight="1">
+                <Box Type="HContainer" Margin="0, 0, 0, 5">
+                    <Col Weight="1">
+                        <Box Type="NativeWindow" Id="IDC_STATIC_GROUP_SIMULATE_MOUSE" X="0" Y="0" Margin="0, 0, 5, 0" />
+                        <Box Type="VContainer" Margin="8, 15, 8, 5">
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_RADIO_WINDOW_INPUT_MOUSE_LBUTTON" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_RADIO_WINDOW_INPUT_MOUSE_MBUTTON" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_RADIO_WINDOW_INPUT_MOUSE_RBUTTON" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_RADIO_WINDOW_INPUT_MOUSE_XBUTTON1" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_RADIO_WINDOW_INPUT_MOUSE_XBUTTON2" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_MOUSEDOWN" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_MOUSEUP" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_MOUSEDBLCLK" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_NCMOUSEDOWN" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_NCMOUSEUP" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_NCMOUSEDBLCLK" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_MOUSE_MSG_CLICK" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_MOUSE_MSG_DBLCLK" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_MOUSE_REAL_CLICK" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_MOUSE_REAL_DBLCLK" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_MOUSEMOVE" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_MOUSELEAVE" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_MOUSEHOVER" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Weight="1">
+                                <Box Type="HContainer">
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_NCMOUSEMOVE" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_NCMOUSELEAVE" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_NCMOUSEHOVER" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                </Box>
+                            </Row>
+                        </Box>
+                    </Col>
+                    <Col Weight="1">
+                        <Box Type="NativeWindow" Id="IDC_STATIC_GROUP_SIMULATE_KEYBOARD" X="0" Y="0" Margin="5, 0, 0, 0" />
+                        <Box Type="VContainer" Margin="8, 15, 8, 5">
+                            <Row Size="30">
+                                <Box Type="HContainer">
+                                    <Col Size="80"><Box Type="NativeWindow" Id="IDC_STATIC_WINDOW_INPUT_INPUT_STRING" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_EDIT_WINDOW_INPUT_INPUT_STRING" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Size="30">
+                                <Box Type="HContainer">
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_KEYDOWN" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_KEYUP" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_CHAR" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                </Box>
+                            </Row>
+                            <Row Size="30">
+                                <Box Type="HContainer">
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_CLICK" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                    <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_INPUT_WM_INPUT" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                                </Box>
+                            </Row>
+                        </Box>
+                    </Col>
+                </Box>
+            </Row>
+            <Row Size="50">
+                <Box Type="NativeWindow" Id="IDC_STATIC_GROUP_SIMULATE_FUNC_KEY" X="0" Y="0" Margin="0, 0, 0, 5" />
+                <Box Type="HContainer" Margin="8, 15, 8, 5">
+                    <Col Size="60"><Box Type="NativeWindow" Id="IDC_CHECK_WINDOW_INPUT_CTRL_STATE" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Size="60"><Box Type="NativeWindow" Id="IDC_CHECK_WINDOW_INPUT_ALT_STATE" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Size="60"><Box Type="NativeWindow" Id="IDC_CHECK_WINDOW_INPUT_SHIFT_STATE" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                </Box>
+            </Row>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW_DWM">
+        <Box Type="NativeWindow" Id="IDC_TAB_WINDOW_DWM" Margin="5, 60, 5, 3" />
+    </Root>
+    <Root Id="IDD_DIALOG_WINDOW_DWM_OP">
+        <Box Type="HContainer" Margin="5, 5, 5, 3">
+            <Col Weight="1">
+                <Box Type="NativeWindow" Id="IDC_STATIC_GROUP_DWM_OP" X="0" Y="0" Margin="0, 0, 5, 0" />
+                <Box Type="VContainer" Margin="8, 15, 8, 0">
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_EXTEND_FRAME" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_INVALIDATE_ICONIC_BITMAPS" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_NC_RENDER_POLICY" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_TRANSITION_DISABLED" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_ALLOW_NC_PAINT" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_NC_RTL_LAYOUT" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_FORCE_ICONIC_RPST" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_FLIP3D_POLICY" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                        </Box>
+                    </Row>
+                    <Row Weight="1">
+                        <Box Type="HContainer">
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_HAS_ICONIC_BITMAP" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_DISALLOW_PEEK" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                            <Col Weight="1"><Box Type="NativeWindow" Id="IDC_BUTTON_WINDOW_DWM_EXCLUDE_FROM_PEEK" Height="22" HAlign="Center" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                        </Box>
+                    </Row>
+                </Box>
+            </Col>
+            <Col Weight="1">
+                <Box Type="NativeWindow" Id="IDC_STATIC_GROUP_DWM_STATUS" X="0" Y="0" Margin="0, 0, 5, 0" />
+                <Box Type="NativeWindow" Id="IDC_LIST_WINDOW_DWM_STATUS" Margin="8, 20, 8, 10" />
+            </Col>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_COMPILE">
+        <Box Type="NativeWindow" Id="IDC_STATIC_GROUP_COMPILE" X="0" Y="0" Margin="5, 0, 7, 5" />
+        <Box Type="NativeWindow" Id="IDC_STATIC_COMPILE_DROP_NOTICE" Height="56" HAlign="Center" VAlign="Center" Margin="10, 10, 10, 10" />
+    </Root>
+    <Root Id="IDD_DIALOG_PE">
+        <Box Type="VContainer" Margin="5, 3, 5, 5">
+            <Row Weight="1">
+                <Box Type="NativeWindow" Id="IDC_TAB_PE_INFO" Margin="0, 2, 0, 0"/>
+            </Row>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_PE_BASIC">
+        <Box Type="VContainer" Margin="5, 3, 5, 5">
+            <Row Weight="2">
+                <Box Type="NativeWindow" Id="IDC_STATIC_PE_BASIC_STRUCT" X="0" Y="0" Margin="5, 5, 5, 5"/>
+                <Box Type="NativeWindow" Id="IDC_TREE_PE_BASIC_STRUCT" Margin="13, 23, 13, 13" />
+            </Row>
+            <Row Weight="3">
+                <Box Type="NativeWindow" Id="IDC_STATIC_PE_BASIC_DETAIL" X="0" Y="0" Margin="5, 5, 5, 5"/>
+                <Box Type="NativeWindow" Id="IDC_LIST_PE_BASIC_DETAIL" Margin="13, 23, 13, 13"/>
+            </Row>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_PDB">
+        <Box Type="VContainer" Margin="5, 3, 5, 5">
+            <Row Size="30">
+                <Box Type="HContainer" Height="30">
+                    <Col Size="80">
+                        <Box Type="NativeWindow" Id="IDC_BUTTON_PDB_LOAD_SYMBOL" Height="25" VAlign="Center" />
+                    </Col>
+                    <Col Weight="1">
+                        <Box Type="NativeWindow" Id="IDC_STATIC_PDB_PDB_FILE_PATH" Margin="5, 0, 0, 0" Height="14" VAlign="Center" />
+                    </Col>
+                </Box>
+            </Row>
+            <Row Weight="1">
+                <Box Type="NativeWindow" Id="IDC_TAB_COMPILE_PDB" Margin="0, 2, 0, 0"/>
+            </Row>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_PDB_COMPILAND">
+        <Box Type="VContainer" Margin="5, 5, 5, 3">
+            <Row Weight="1">
+                <Box Type="NativeWindow" Id="IDC_STATIC_PDB_OBJECT" X="0" Y="0" />
+                <Box Type="NativeWindow" Id="IDC_LIST_PDB_OBJECT" Margin="8, 18, 8, 8" />
+            </Row>
+            <Row Size="10">
+            </Row>
+            <Row Weight="1">
+                <Box Type="NativeWindow" Id="IDC_STATIC_PDB_COMPILAND" X="0" Y="0" />
+                <Box Type="NativeWindow" Id="IDC_LIST_PDB_COMPILAND" Margin="8, 18, 8, 8"/>
+            </Row>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_PDB_SYMBOL">
+        <Box Type="NativeWindow" Id="IDC_TREE_PDB_SYMBOL" Margin="5, 5, 5, 3" />
+    </Root>
+    <Root Id="IDD_DIALOG_CONFIG">
+        <Box Type="NativeWindow" Id="IDC_TAB_CONFIG" Margin="5, 5, 5, 3" />
+    </Root>
+    <Root Id="IDD_DIALOG_CONFIG_HOTKEY">
+        <Box Type="VContainer" Margin="5, 5, 5, 0">
+            <Row Weight="1">
+                <Box Type="NativeWindow" Id="IDC_TREE_CONFIG_HOTKEY"/>
+            </Row>
+            <Row Size="30">
+                <Box Type="HContainer">
+                    <Col Size="40"><Box Type="NativeWindow" Id="IDC_STATIC_CONFIG_HOTKEY_PICKER" Height="14" VAlign="Center" /></Col>
+                    <Col Size="150"><Box Type="NativeWindow" Id="IDC_HOTKEY_CONFIG_HOTKEY_PICKER" Height="20" VAlign="Center" /></Col>
+                    <Col Size="90"><Box Type="NativeWindow" Id="IDC_CHECK_CONFIG_HOTKEY_GLOBAL" Height="20" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                    <Col Size="75"><Box Type="NativeWindow" Id="IDC_BUTTON_HOTKEY_APPLY" Height="24" VAlign="Center" Margin="5, 0, 5, 0" /></Col>
+                </Box>
+            </Row>
+        </Box>
+    </Root>
+    <Root Id="IDD_DIALOG_LOG">
+        <Box Type="VContainer" Margin="5, 5, 5, 3">
+            <Row Size="30">
+                <Box Type="HContainer">
+                    <Col Size="90"><Box Type="NativeWindow" Id="IDC_STATIC_LOG_SET_LEVEL" Height="14" VAlign="Center" /></Col>
+                    <Col Size="150"><Box Type="NativeWindow" Id="IDC_COMBO_SET_LOG_LEVEL" Height="22" VAlign="Center" /></Col>
+                    <Col Size="85"><Box Type="NativeWindow" Id="IDC_BUTTON_SET_LOG_SETTING" Height="24" VAlign="Center" Margin="10, 0, 5, 0" /></Col>
+                </Box>
+            </Row>
+            <Row Weight="1">
+                <Box Type="NativeWindow" Id="IDC_EDIT_LOG_CONTENT" Margin="0, 3, 0, 0"/>
+            </Row>
+        </Box>
+    </Root>
+</UI>

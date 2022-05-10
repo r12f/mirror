@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ui">
+      <UniqueIdentifier>{87c743d7-bd0a-4a92-a691-537d7da48a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pdb">
+      <UniqueIdentifier>{23eff569-82d5-4faa-97f0-5adf642add02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\pe">
+      <UniqueIdentifier>{ac757c21-44e7-4da5-b362-4515ea8551e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\pdb">
+      <UniqueIdentifier>{0d665fc3-8fa3-4a3c-8986-28ea319f7690}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ui\dlg_compile.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="pdb\pdb_code_detail.cpp">
+      <Filter>pdb</Filter>
+    </ClCompile>
+    <ClCompile Include="pdb\pdb_file.cpp">
+      <Filter>pdb</Filter>
+    </ClCompile>
+    <ClCompile Include="pdb\pdb_module_detail.cpp">
+      <Filter>pdb</Filter>
+    </ClCompile>
+    <ClCompile Include="pdb\pdb_module_detail_list.cpp">
+      <Filter>pdb</Filter>
+    </ClCompile>
+    <ClCompile Include="pdb\pdb_source_detail.cpp">
+      <Filter>pdb</Filter>
+    </ClCompile>
+    <ClCompile Include="module_compile.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="ui\pdb\dlg_pdb_compiland.cpp">
+      <Filter>ui\pdb</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\pdb\dlg_pdb_symbol.cpp">
+      <Filter>ui\pdb</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\pdb\dlg_pdb.cpp">
+      <Filter>ui\pdb</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\pe\pe_summary_table_filler.cpp">
+      <Filter>ui\pe</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\dlg_pe.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\pe\dlg_pe_basic.cpp">
+      <Filter>ui\pe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui\dlg_compile.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="pdb\pdb_code_detail.h">
+      <Filter>pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="pdb\pdb_file.h">
+      <Filter>pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="pdb\pdb_module_detail.h">
+      <Filter>pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="pdb\pdb_module_detail_list.h">
+      <Filter>pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="pdb\pdb_source_detail.h">
+      <Filter>pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="module_compile.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="ui\pdb\dlg_pdb.h">
+      <Filter>ui\pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\pdb\dlg_pdb_compiland.h">
+      <Filter>ui\pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\pdb\dlg_pdb_symbol.h">
+      <Filter>ui\pdb</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\pe\pe_summary_table_filler.h">
+      <Filter>ui\pe</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\dlg_pe.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\pe\dlg_pe_basic.h">
+      <Filter>ui\pe</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

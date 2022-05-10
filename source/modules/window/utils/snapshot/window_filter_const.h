@@ -1,0 +1,29 @@
+#pragma once
+
+enum {
+    WINDOW_FILTER_TYPE_CLASSNAME            = 1,
+    WINDOW_FILTER_TYPE_TITLE,
+    WINDOW_FILTER_TYPE_PID,
+    WINDOW_FILTER_TYPE_TID,
+    WINDOW_FILTER_TYPE_PROCESS_NAME,
+};
+
+enum {
+    WINDOW_FILTER_RELATION_EQ               = 1,
+    WINDOW_FILTER_RELATION_NE,
+    WINDOW_FILTER_RELATION_GT,
+    WINDOW_FILTER_RELATION_GE,
+    WINDOW_FILTER_RELATION_LT,
+    WINDOW_FILTER_RELATION_LE,
+    WINDOW_FILTER_RELATION_CONTAIN,
+    WINDOW_FILTER_RELATION_NOT_CONTAIN,
+};
+
+enum {
+    WINDOW_FILTER_OP_INCLUDE                = 1,
+    WINDOW_FILTER_OP_EXCLUDE,
+};
+
+CString TranslateWindowFilterType(DWORD nType);
+CString TranslateWindowFilterRelation(DWORD nRelation);
+CString TranslateWindowFilterOp(DWORD nOp);

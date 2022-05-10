@@ -1,0 +1,37 @@
+#pragma once
+
+MIDL_INTERFACE("8204C291-17F8-4254-9662-AC642DEE4EFC")
+IUIControl : IUnknown
+{
+public:
+    virtual HRESULT STDMETHODCALLTYPE RequestDoOperation(UINT nOpId, LPARAM lParam) = 0;
+    virtual HRESULT STDMETHODCALLTYPE RequestRefresh(BOOL bRecursive = TRUE, BOOL bForceReload = TRUE, DWORD nParam = 0) = 0;
+};
+
+enum {
+    WM_UI_CONTROL_BASE              = WM_USER + 0x100,
+    WM_UI_CONTROL_SHOW_ME,
+    WM_UI_CONTROL_DO_OPERATION,
+    WM_UI_CONTROL_CEILING,
+};
+
+enum {
+    UIOP_COMMON_BASE                        = 0,
+    UIOP_COMMMON_SWITCH_TO_TAB_BY_ID,
+    UIOP_COMMMON_SWITCH_TO_TAB_BY_HWND,
+    UIOP_COMMON_CEILING,
+};
+
+enum {
+    UIOP_WINDOW_BASE                        = 100,
+    UIOP_WINDOW_CAPTURE_WINDOW_UNDER_MOUSE,
+    UIOP_WINDOW_SHOW_WINDOW_TREE,
+    UIOP_WINDOW_SHOW_WINDOW_PROPERTIES,
+    UIOP_WINDOW_CEILING,
+};
+
+enum {
+    UIOP_WINDOW_LIST_BASE                   = 200,
+    UIOP_WINDOW_LIST_SELECT_WATCH_WINDOW,
+    UIOP_WINDOW_LIST_CEILING
+};

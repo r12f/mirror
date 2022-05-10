@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="config">
+      <UniqueIdentifier>{4461e831-e75e-43de-90f1-3ca07337e13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hotkey">
+      <UniqueIdentifier>{e3c041e2-3e0e-4042-b462-86af8d29bdc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{d599d43d-6f67-4155-9fb9-9e616f69663c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{265411c1-140b-46ec-9780-08c9b1d3f5ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread_pool">
+      <UniqueIdentifier>{84c7d1b4-a921-4ac0-9e64-a642148602ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{81c7d10c-58c5-4fd4-ab1c-c468bbe0f03e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\http">
+      <UniqueIdentifier>{dd495a5b-7f03-4233-999a-2a3c3a7a15b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="update">
+      <UniqueIdentifier>{a274b619-3b9b-4fcb-bab4-40737a42bde7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code_injector">
+      <UniqueIdentifier>{0c206169-1bfa-4ce8-b2d3-830dbc74f66a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="app\dlg_config.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\dlg_config_hotkey.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\dlg_log.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="app\dlg_update_notify.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="log\log_core.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="log\log_record.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_pool\tp_core.cpp">
+      <Filter>thread_pool</Filter>
+    </ClCompile>
+    <ClCompile Include="thread_pool\tp_worker.cpp">
+      <Filter>thread_pool</Filter>
+    </ClCompile>
+    <ClCompile Include="net\http\http_download.cpp">
+      <Filter>net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="net\http\http_download_handler_buffer.cpp">
+      <Filter>net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="net\http\http_downloader.cpp">
+      <Filter>net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="update\update_download_task.cpp">
+      <Filter>update</Filter>
+    </ClCompile>
+    <ClCompile Include="update\update_service.cpp">
+      <Filter>update</Filter>
+    </ClCompile>
+    <ClCompile Include="code_injector\code_injector.cpp">
+      <Filter>code_injector</Filter>
+    </ClCompile>
+    <ClCompile Include="code_injector\injected_code.cpp">
+      <Filter>code_injector</Filter>
+    </ClCompile>
+    <ClCompile Include="module_builtin.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="hotkey\local_hotkey_event_pump.cpp">
+      <Filter>hotkey</Filter>
+    </ClCompile>
+    <ClCompile Include="hotkey\hotkey_manager.cpp">
+      <Filter>hotkey</Filter>
+    </ClCompile>
+    <ClCompile Include="hotkey\hotkey.cpp">
+      <Filter>hotkey</Filter>
+    </ClCompile>
+    <ClCompile Include="hotkey\hotkey_handler.cpp">
+      <Filter>hotkey</Filter>
+    </ClCompile>
+    <ClCompile Include="hotkey\global_hotkey_event_pump.cpp">
+      <Filter>hotkey</Filter>
+    </ClCompile>
+    <ClCompile Include="config\config.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="app\dlg_config.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\dlg_config_hotkey.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\dlg_log.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="app\dlg_update_notify.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="log\log_core.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="log\log_record.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_pool\tp_common.h">
+      <Filter>thread_pool</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_pool\tp_core.h">
+      <Filter>thread_pool</Filter>
+    </ClInclude>
+    <ClInclude Include="thread_pool\tp_worker.h">
+      <Filter>thread_pool</Filter>
+    </ClInclude>
+    <ClInclude Include="net\http\http_download.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="net\http\http_download_event.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="net\http\http_download_handler_buffer.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="net\http\http_download_handler_file.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="net\http\http_downloader.h">
+      <Filter>net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="update\update_download_task.h">
+      <Filter>update</Filter>
+    </ClInclude>
+    <ClInclude Include="update\update_service.h">
+      <Filter>update</Filter>
+    </ClInclude>
+    <ClInclude Include="code_injector\code_injector.h">
+      <Filter>code_injector</Filter>
+    </ClInclude>
+    <ClInclude Include="code_injector\injected_code.h">
+      <Filter>code_injector</Filter>
+    </ClInclude>
+    <ClInclude Include="module_builtin.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="hotkey\local_hotkey_event_pump.h">
+      <Filter>hotkey</Filter>
+    </ClInclude>
+    <ClInclude Include="hotkey\hotkey_manager.h">
+      <Filter>hotkey</Filter>
+    </ClInclude>
+    <ClInclude Include="hotkey\hotkey.h">
+      <Filter>hotkey</Filter>
+    </ClInclude>
+    <ClInclude Include="hotkey\hotkey_handler.h">
+      <Filter>hotkey</Filter>
+    </ClInclude>
+    <ClInclude Include="hotkey\global_hotkey_event_pump.h">
+      <Filter>hotkey</Filter>
+    </ClInclude>
+    <ClInclude Include="config\config.h">
+      <Filter>config</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
